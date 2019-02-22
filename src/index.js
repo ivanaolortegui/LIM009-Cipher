@@ -6,19 +6,13 @@ const outputName = document.getElementById('output-name');
 const btnEncode = document.getElementById('btn-encode');
 
 
-const encode = (inputN, inputS, offset) => {
-  
-  let output = '';
-  for (let i = 0; i < inputN.length; i++) {
-    const codeUni = inputN.charCodeAt(i);
-    const formula = String.fromCharCode((codeUni - 65 + offset) % 26 + 65);
-    output += formula;
-  }
+const functionEncode = (inputN, inputS, offset) => {
+  let output = window.cipher.encode(inputN,inputS,offset);
   outputName.innerHTML = output /// para pintar lo que me retorna la función 
 };
 
 btnEncode.addEventListener('click', () => {
-  const input1 = inputName.value;
-  const offset1 = offset.value;
-  encode(input1, inputSurname, offset1)
+  let input1 = inputName.value;
+  let offset1 = offset.value;
+  functionEncode(input1, inputSurname, offset1)
 })
