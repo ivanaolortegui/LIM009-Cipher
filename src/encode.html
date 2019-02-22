@@ -23,7 +23,16 @@
       </header>    
       <section>      
           <article>
-            <h2>CONTENIDO PRINCIPAL</h2>
+            <form name="formulario">
+                <h2>Cifrar tu nombre y Apellido</h2>
+                Nombre: <input type="text" id="input-name" name="nombre" placeholder="Tu Nombre"  required/>
+                Apellido: <input type="text" id="input-surname" name="apellido" placeholder="Tu Apellido"required/>
+                Password: <input type="number" id="offset" name="pass" placeholder="clave secreta"  required/>
+                <button type="button" class="btn" id="btn-encode">Cifrar </button>
+                <p>Tu nombre cifrado es: <output id="output-name"></output> </p>
+                <p>Tu Apellido cifrado es: <output id="output-surname"></output></p>
+            </form>
+
             <p>Este es el contenido principal de mi web</p>
             <div>
               <p>slider</p>
@@ -41,9 +50,11 @@
             <a href="http://dominio.com/aviso-legal">Política de cookies</a>
             <h4>Redes sociales</h4>
             <a href="http://facebook.com/mi-pagina-de-facebook">Mi Facebook</a>
+            <div class="copyright">
+                © 2019 Copyright Security Bank. Todos los derechos reservados.
+            </div>
         </footer>
-     
-    <script src="cipher.js"></script>
+    <!-- <script src="cipher.js"></script> -->
     <script src="index.js"></script>
   </body>
 </html>
