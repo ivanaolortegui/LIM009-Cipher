@@ -9,48 +9,48 @@
   </head>
   <body>
       <header>
-          <!-- <h1>Título de la WEB</h1> -->
-          <input type="checkbox" id="btn-menu">
-          <label for="btn-menu"> <img src="img/menu.png" alt="lol-logo">
-          </label>
-          <nav class="menu">
+        <a href="index.html">
+          <img class="logo" src="img/security-payment.png" alt="logo de security bank">
+        </a>     
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"> <img src="img/menu.png" alt="lol-logo">
+        </label>
+        <nav class="menu">
+          <ul>
+            <li> <a href="">Instrucciones</a> </li>
+            <li> <a>Cifrar</a>
               <ul>
-                  <li> <a href="">Instrucciones</a> </li>
-                  <li> <a href="encode.html">Cifrar</a></li>
-                  <li> <a href="decode.html">Descifrar</a></li>
+                <li> <a href="encode.html"> Cifrar Nombres y Apellidos </a>
+                <li> <a href="#"> Cifrar Tarjetas </a>
+                </li>
               </ul>
-          </nav>
+            </li>
+            <li> <a>Descifrar</a>
+              <ul>
+                <li> <a href="decode.html"> Descifrar Nombres y Apellidos </a> </li>
+                <li> <a href="decode.1.html"> Descifrar Tarjetas </a> </li>    
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </header>    
       <section>      
           <article>
             <form name="formulario2">
-                <h2>Cifrar tu nombre y Apellido</h2>
-                Nombre: <input type="text" id="input-name-encode" name="nombre2" placeholder="Tu Nombre"  required/>
-                Apellido: <input type="text" id="input-surname-encode" name="apellido2" placeholder="Tu Apellido"required/>
-                Password: <input type="number" id="offset-encode" name="pass" placeholder="clave secreta"  required/>
+              <h2>Descifrar tu nombre y Apellido</h2>
+               <input type="text" id="input-name-encode" name="nombre2" placeholder="Tu Nombre" > 
+               <input type="text" id="input-surname-encode" name="apellido2" placeholder="Tu Apellido">
+               <input type="password" id="offset-encode" name="pass" placeholder="Clave secreta" >
                 <button type="button" class="btn" id="btn-decode">Descifrar </button>
-                <p>Tu nombre descifrado es: <output id="output-name-decode"></output> </p>
-                <p>Tu Apellido descifrado es: <output id="output-surname-decode"></output></p>
-            </form>
-  
-            <h2>CONTENIDO PRINCIPAL</h2>
-            <p>Este es el contenido principal de mi web</p>
-            <div>
-              <p>slider</p>
-              <img src="img" alt="slider">          
-            </div>
+                <h3>Tu nombre descifrado es: <output id="output-name-decode"></output> </h3>
+                <h3>Tu Apellido descifrado es: <output id="output-surname-decode"></output></h3>
+            </form> 
           </article>      
         </section>
-        <aside>         
-            <h3>Testimonios</h3>
-            <img src="img" alt="Testimonio de xxx xxxx">  
-            <p>Me gusta mucho esta página.</p>
-        </aside>
         <footer>
-            <h4>Avisos legales</h4>
-            <a href="http://dominio.com/aviso-legal">Política de cookies</a>
-            <h4>Redes sociales</h4>
-            <a href="http://facebook.com/mi-pagina-de-facebook">Mi Facebook</a>
+            <h4>
+                © 2019 Copyright Security Bank. Todos los derechos reservados.
+            </h4>
         </footer>
      
     <script src="cipher.js"></script>

@@ -8,26 +8,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-      <header>
-          <!-- <h1>Título de la WEB</h1> -->
-          <input type="checkbox" id="btn-menu">
-          <label for="btn-menu"> <img src="img/menu.png" alt="lol-logo">
-          </label>
-          <nav class="menu">
+      <header> 
+        <a href="index.html">
+          <img class="logo" src="img/security-payment.png" alt="logo de security bank">
+        </a>   
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"> <img src="img/menu.png" alt="lol-logo">
+        </label>  
+        <nav class="menu">
+          <ul>
+            <li> <a href="">Instrucciones</a> </li>
+            <li> <a>Cifrar</a>
               <ul>
-                  <li> <a href="">Instrucciones</a> </li>
-                  <li> <a href="encode.html">Cifrar</a></li>
-                  <li> <a href="decode.html">Descifrar</a></li>
+                <li> <a href="encode.html"> Cifrar Nombres y Apellidos </a>
+                <li> <a href="#"> Cifrar Tarjetas </a>
+                </li>
               </ul>
+            </li>
+            <li> <a>Descifrar</a>
+              <ul>
+                  <li> <a href="decode.html"> Descifrar Nombres y Apellidos </a> </li>
+                  <li> <a href="decode.1.html"> Descifrar Tarjetas </a> </li>    
+              </ul>
+            </li>
+          </ul>
           </nav>
-      </header>    
+      </header>  
       <section>      
           <article>
             <h2>CONTENIDO PRINCIPAL</h2>
-            <p>Este es el contenido principal de mi web</p>
+            <h3>Este es el contenido principal de mi web</h3>
+            <h4>Lorem Ipsum is simply dummy text of the printing and typesetting. </h4>
+            <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <p> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             <div>
-              <p>slider</p>
-              <img src="img" alt="slider">          
+              <img src="img/candado-movil.jpg" alt="seguridad de datos">  
+              <img src="img/seguridad-cifrada.jpg" alt="seguridad de datos">         
             </div>
           </article>      
         </section>
@@ -37,10 +54,9 @@
             <p>Me gusta mucho esta página.</p>
         </aside>
         <footer>
-            <h4>Avisos legales</h4>
-            <a href="http://dominio.com/aviso-legal">Política de cookies</a>
-            <h4>Redes sociales</h4>
-            <a href="http://facebook.com/mi-pagina-de-facebook">Mi Facebook</a>
+            <h4>
+                © 2019 Copyright Security Bank. Todos los derechos reservados.
+            </h4>
         </footer>
      
     <script src="cipher.js"></script>

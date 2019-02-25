@@ -20,14 +20,15 @@
             <li> <a href="">Instrucciones</a> </li>
             <li> <a>Cifrar</a>
               <ul>
-                <li> <a href="encode.html"> Cifrar Nombres y Apellidos </a> </li>
-                <li> <a href="decode.1.html"> Cifrar Tarjetas </a> </li>
+                <li> <a href="encode.html"> Cifrar Nombres y Apellidos </a>
+                <li> <a href="#"> Cifrar Tarjetas </a>
+                </li>
               </ul>
             </li>
             <li> <a>Descifrar</a>
               <ul>
                 <li> <a href="decode.html"> Descifrar Nombres y Apellidos </a> </li>
-                <li> <a href="#"> Descifrar Tarjetas </a></li>
+                <li> <a href="decode.1.html"> Descifrar Tarjetas </a> </li>    
               </ul>
             </li>
           </ul>
@@ -35,23 +36,24 @@
       </header>    
       <section>      
           <article>
-            <form name="formulario">
-                <h2>Cifrar tu nombre y Apellido</h2>
-                <input type="text" id="input-name" name="nombre" placeholder="Tu Nombre">
-                <input type="text" id="input-surname" name="apellido" placeholder="Tu Apellido">
-                <input type="number" id="offset" name="pass" placeholder="Clave secreta">
-                <button type="button" class="btn" id="btn-encode">Cifrar </button>
-                <h3>Tu nombre cifrado es: <output id="output-name"></output> </h3>
-                <h3>Tu Apellido cifrado es: <output id="output-surname"></output></h3>
+            <form name="formulario2">
+              <h2>Descifra tu tarjeta</h2>
+               <input type="number" id="input-number-encode" name="nombre2" placeholder="Ingresa tu número de tarjeta de 20 digitos" > 
+               <input type="number" id="input-code-encode" name="apellido2" placeholder="Ingresa tu codigo cvv de tarjeta de 3 digitos">
+               <input type="password" id="offset-card-encode" name="pass" placeholder="Clave secreta" >
+               <button type="button" class="btn" id="btn-decode-card">Descifrar </button>
+               <h3>Tu número de tarjeta descifrado es: <output id="output-number-decode"></output> </h3>
+               <h3>Tu código de tarjeta descifrado es: <output id="output-code-decode"></output></h3>
             </form>
           </article>      
-        </section>     
+      </section>   
         <footer>
             <h4>
                 © 2019 Copyright Security Bank. Todos los derechos reservados.
             </h4>
         </footer>
-    <script src="cipher.js"></script> 
-    <script src="index.js"></script>
+     
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>|
   </body>
 </html>
