@@ -9,8 +9,8 @@ window.cipher = {
       } else if(codeAscci>=97&&codeAscci<=122) {
         const formula = String.fromCharCode((codeAscci - 97 + offset) % 26 + 97);
         output += formula;
-      } else if(codeAscci >= 33 && codeAscci<= 64) {
-        const formula = String.fromCharCode((codeAscci-33 + offset)%31 + 33);
+      } else if(codeAscci >= 48 && codeAscci <= 57) {
+        const formula = String.fromCharCode((codeAscci- 48 + offset) % 10 + 48);
         output +=formula;
       } else {
         output +=String.fromCharCode(codeAscci);
@@ -31,9 +31,9 @@ window.cipher = {
         const formula = (codeAscci - 97 - offset % 26) % 26 + 97;
         let newLetter = String.fromCharCode(formula < 97 ? formula + 26 : formula);
         output += newLetter;
-      } else if (codeAscci >= 33 && codeAscci <= 64){
-        const formula = (codeAscci - 33 - offset % 31)% 31 + 33;
-        let newLetter = String.fromCharCode(formula < 33 ? formula + 31 : formula);
+      } else if (codeAscci >= 48 && codeAscci <= 57){
+        const formula = (codeAscci - 48 - offset % 10)% 10 + 48;
+        let newLetter = String.fromCharCode(formula < 48 ? formula + 10 : formula);
         output += newLetter;
       }else {
         output +=String.fromCharCode(codeAscci);
