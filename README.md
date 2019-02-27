@@ -48,7 +48,14 @@ Algunas ideas de ejemplo:
 
 ## Proceso de diseño
 
+### Prototipo de baja fidelidad 
+![Sin titulo](img-readme/sketch-inicio.jpg)
+![Sin titulo](img-readme/sketch-menu.jpg)
+![Sin titulo](img-readme/sketch-ruta-cifrar-descifrar.jpg)
+![Sin titulo](img-readme/sketch-cifrar.jpg)
+![Sin titulo](img-readme/sketch-mensaje-cifrado.jpg)
 (Describir todo el proceso de diseño)
+
 
 - Este proyecto se debe resolver de manera individual.
 - El proyecto será entregado subiendo tu código a GitHub (commit/push) y la interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no te preocupes, lo aprenderás durante este proyecto.
@@ -60,7 +67,6 @@ Algunas ideas de ejemplo:
 (Historia 2)
 
 
-
 ## Definición del producto
 
 En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso para definir el producto final a nivel de experiencia y de interfaz.
@@ -69,10 +75,10 @@ En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proces
 
 #### ¿Quiénes son los principales usuarios de producto.?
 
-  Los principales usuarios de la herramienta digital **Security Bank** son todos aquellos usuarios que necesitan proteger sus datos y números de tarjetas de crédito a la hora de compartir con una un familiar o persona de su confianza.
+  Los principales usuarios de la herramienta digital **Security Bank** son todos aquellos usuarios que necesitan proteger sus datos y números de tarjetas de crédito a la hora de compartir con un familiar o persona de su confianza.
 
 #### ¿Cuáles son los objetivos de estos usuarios en relación con tu producto?
-  Los objetos principales son que el usuario al usar esta aplicación pueda cifrar su tarjetas y datos personales con un número de desplazamiento y al compartirlo con su receptor solo podrar descifralo con el número de dezplamiento compartido. La aplicación debe ser sencilla de usar y sobretodo muy útil para el usuario y tenga una sensación de seguridad y confianza a la hora de comprartir sus números de tarjetas con alguien más que solo pueda saber con quien comparta el offset o clave secreta para tener una comunicación más secreta.
+  Los objetos principales son que el usuario al usar esta aplicación pueda cifrar su tarjetas y datos personales con un número de desplazamiento y al compartirlo con su receptor solo podra descifralo con el número de dezplamiento compartido. La aplicación debe ser sencilla de usar y sobretodo muy útil para el usuario y tenga una sensación de seguridad y confianza a la hora de comprartir sus números de tarjetas con alguien más que solo pueda saber con quien comparta el offset o clave secreta para tener una comunicación más secreta.
 
 #### ¿Cómo crees que el producto que estás creando está resolviendo sus problemas?
    
