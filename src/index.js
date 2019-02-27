@@ -69,7 +69,7 @@ const functionDecode = (inputN, inputS, offset) => {
   btnDecodeCard.addEventListener('click',()=>{
     let inputNumberValue = inputNumberDecode.value;
     let inputCodeValue = inputCodeDecode.value;
-    let offsetValue = offsetCarDecode.value;
+    let offsetValue = parseInt(offsetCarDecode.value);
     functionDecodeCard(inputNumberValue,inputCodeValue,offsetValue)
   })
 } else {
@@ -83,7 +83,7 @@ const functionDecode = (inputN, inputS, offset) => {
   btnEncodeCard.addEventListener('click',()=>{
     let inputNumberValue = inputNumberEncode.value;
     let inputCodeValue = inputCodeEncode.value;
-    let offsetValue = offsetCardEncode.value;
+    let offsetValue = parseInt(offsetCardEncode.value);
     functionEncodeCard(inputNumberValue,inputCodeValue,offsetValue)
   })
 }
