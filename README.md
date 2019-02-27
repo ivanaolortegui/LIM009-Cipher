@@ -1,4 +1,21 @@
-# Cifrado César
+# Security Bank
+
+## Índice
+
+* [Preámbulo](#preámbulo)
+* [Entrevistas](#entrevistas)
+* [Proceso de diseño](#proceso-de-diseño)
+* [Historias de Usuario](#historias-de-Usuario)
+* [Definición del producto](#definición-del-producto)
+* [Interfaz de usuario (UI)](#interfaz-de-usuario-(UI))
+* [Planning](#planning)
+* [Consideraciones Tecnicas](#consideraciones-Tecnicas)
+* [Contenido de referencia](#contenido-de-referencia)
+* [Checklist](#checklist)
+
+***
+
+## Preámbulo
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
 
@@ -15,7 +32,7 @@ Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
 
 En la actualidad, todos los cifrados de sustitución simple se descifran con mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas más complejos de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13.
 
-## Resumen del proyecto
+## Entrevistas
 
 ¿Qué tengo que hacer exactamente? En este proyecto crearás la primera aplicación web del _bootcamp_. Servirá para que el usuario pueda cifrar y descifrar un texto indicando un desplazamiento específico de caracteres (_offset_).
 
@@ -29,51 +46,49 @@ Algunas ideas de ejemplo:
 - Mensajería secreta para parejas.
 
 
-## Consideraciones generales
+## Proceso de diseño
+
+(Describir todo el proceso de diseño)
 
 - Este proyecto se debe resolver de manera individual.
 - El proyecto será entregado subiendo tu código a GitHub (commit/push) y la interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no te preocupes, lo aprenderás durante este proyecto.
 - Tiempo para completarlo: El proyecto dura 2 semanas, trabaja con sprints y planificando tus tareas.
 
-## Objetivos de aprendizaje
+## Historias de Usuario
 
-En este proyecto aprenderás a construir una aplicación web que interactúe con el usuario a través del navegador y la lógica basada en esa interacción. Dicho en palabras sencillas, aprenderás a:
+(Historia 1)
+(Historia 2)
 
-- Pintar elementos de formulario en la pantalla usando **HTML** y **CSS**.
-- Permitir al usuario interactuar (**eventos del DOM**) y hacer algo cuando ocurran dichos eventos (cifrar/descifrar).
-- Manipular _**strings**_ (cadenas de texto).
-- Usar **control de flujo** (bucles, condicionales, ...).
-- Actualizar la pantalla con los resultados (**manipular el DOM**).
-- **Implementar funciones** dada una descripción de su comportamiento.
-- Verificar tu implementación con **pruebas unitarias**.
+
+
+## Definición del producto
+
+En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso para definir el producto final a nivel de experiencia y de interfaz.
 - Entender las **necesidades del usuario** y cómo proponer una solución.
 - Organizar tu tiempo y priorizar tareas en un entorno de **alta incertidumbre**.
 
-## Parte Obligatoria
+#### ¿Quiénes son los principales usuarios de producto.?
 
-Usa este alfabeto simple (solamente mayúsculas y sin ñ):
+  Los principales usuarios de la herramienta digital **Security Bank** son todos aquellos usuarios que necesitan proteger sus datos y números de tarjetas de crédito a la hora de compartir con una un familiar o persona de su confianza.
 
-- A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+#### ¿Cuáles son los objetivos de estos usuarios en relación con tu producto?
+  Los objetos principales son que el usuario al usar esta aplicación pueda cifrar su tarjetas y datos personales con un número de desplazamiento y al compartirlo con su receptor solo podrar descifralo con el número de dezplamiento compartido. La aplicación debe ser sencilla de usar y sobretodo muy útil para el usuario y tenga una sensación de seguridad y confianza a la hora de comprartir sus números de tarjetas con alguien más que solo pueda saber con quien comparta el offset o clave secreta para tener una comunicación más secreta.
 
-#### Definición del producto
+#### ¿Cómo crees que el producto que estás creando está resolviendo sus problemas?
+   
+  El producto esta resolviendo problemas de inseguridad o de robo de numeros de tarjetas, ya que solo con quien el usuario comparta su numero de tarjetas cifrada y clave secreta serán los unicos en tener acceso a los datos reales a la hora de descifrar el mensaje secreto.
 
-En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso para definir el producto final a nivel de experiencia y de interfaz.
+## Interfaz de usuario (UI)
 
-- Quiénes son los principales usuarios de producto.
-- Cuáles son los objetivos de estos usuarios en relación con tu producto.
-- Cómo crees que el producto que estás creando está resolviendo sus problemas.
+### Interfaz para Desktop o PC
 
-#### Interfaz de usuario (UI)
+### Interfaz para Mobile
 
-La interfaz debe permitir al usuario:
-- Elegir un desplazamiento (_offset_) indicando cuántas posiciones queremos que el cifrado desplace cada caracter.
-- Insertar un mensaje (texto) que queremos cifrar.
-- Ver el resultado del mensaje cifrado.
-- Insertar un mensaje (texto) a descifrar.
-- Ver el resultado del mensaje descifrado.
+(Usar una gif de la UI de la pag)
 
-#### Scripts / Archivos
+## Planning
 
+### Tablero Kanban
 * `README.md`: debe explicar cómo descargar, instalar y ejecutar la aplicación
   así como una introducción a la aplicación, su funcionalidad y decisiones de
   diseño que tomaron.
@@ -101,8 +116,7 @@ La descripción general de este proyecto no menciona qué pasaría con las letra
 
 Tampoco se menciona qué pasaría si el offset fuera negativo. Como parte del hacker edition te invitamos a explorar también esta caso por tu cuenta.
 
-## Vamos a los detalles. Consideraciones Técnicas
-
+## Consideraciones Técnicas
 La lógica del proyecto debe estar implementada completamente en JavaScript (ES6).
 En este proyecto NO está permitido usar librerías o frameworks, sólo
 [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e).

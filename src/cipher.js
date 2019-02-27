@@ -15,7 +15,6 @@ window.cipher = {
       } else {
         output +=String.fromCharCode(codeAscci);
       }
-     
     }
      return output;
   },
