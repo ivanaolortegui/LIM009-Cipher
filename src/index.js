@@ -29,8 +29,17 @@ const btnEncodeCard =document.getElementById('btn-encode-card');
 
 if(btnEncode){
 const functionEncode = (inputN, inputS, offset) => {
-  let output = window.cipher.encode(inputN, offset);
-  let output2 = window.cipher.encode(inputS, offset);
+  let output = '';
+  let output2 = '';
+  //Agregue condicionales para offset negativos
+  if(offset < 0){
+    let negativeOffset =  offset *-1;
+    output = window.cipher.decode(inputN, negativeOffset);
+    output2 = window.cipher.decode(inputS, negativeOffset);
+  } else {
+    output = window.cipher.encode(inputN, offset);
+    output2 = window.cipher.encode(inputS, offset);
+  }
   outputName.innerHTML = output 
   outputSuername.innerHTML = output2 /* Aqui estoy asignado el valor que me 
   retorna la función del respectivo objeto con su propiedad que estoy llamando;
@@ -46,8 +55,17 @@ const functionEncode = (inputN, inputS, offset) => {
   }) 
 } else if (btnDecode) {
 const functionDecode = (inputN, inputS, offset) => {
-  let output = window.cipher.decode(inputN,offset);
-  let output2 = window.cipher.decode(inputS,offset);
+  let output = '';
+  let output2 = '';
+  
+  if(offset < 0) {
+    let negativeOffset = offset *-1;
+    output = window.cipher.encode(inputN, negativeOffset);
+    output2 = window.cipher.encode(inputS, negativeOffset);
+  } else {
+    output = window.cipher.decode(inputN, offset);
+    output2 = window.cipher.decode(inputS, offset);
+  }
   outputNameDecode.innerHTML = output
   outputSurnameDecode.innerHTML = output2
 };
