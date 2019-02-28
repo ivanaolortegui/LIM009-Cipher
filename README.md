@@ -16,7 +16,12 @@
 ***
 
 ## Preámbulo
+En este mundo digital la privacidad y seguridad de los datos personales se encuentran en constante amenaza. Es por eso que **SECURITY BANK**, al estar enfocado al mundo finacieros, le da al usuario la opción de crear contraseñas y cifrar números bancarios para lograr una óptima seguridad y protección.
 
+Para ello, **SECURITY BANK** cuenta con el Cifrado César, el cuál consiste en:
+
+
+especificamente a los usuarios  pertmite a los usuarios crar contraseñas para proteger sus tarjetas,
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
 
 ![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
@@ -95,6 +100,10 @@ En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proces
 ## Planning
 
 ### Tablero Kanban
+
+![Sin titulo](img-readme/tablero.jpg)
+![Sin titulo](img-readme/el-tablero-yo.jpg)
+
 * `README.md`: debe explicar cómo descargar, instalar y ejecutar la aplicación
   así como una introducción a la aplicación, su funcionalidad y decisiones de
   diseño que tomaron.
@@ -289,26 +298,26 @@ Esta sección está  para ayudarte a llevar un control de lo que vas completando
 
 ### Parte Obligatoria
 
-* [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
+* [] `README.md` incluye info sobre proceso y decisiones de diseño.
 * [ ] `README.md` explica claramente quiénes son los usuarios y su relación con el producto.
 * [ ] `README.md` explica claramente cómo el producto soluciona los problemas/necesidades de los usuarios.
-* [ ] Usa VanillaJS.
-* [ ] No utiliza `this`.
-* [ ] Implementa `cipher.encode`.
-* [ ] Implementa `cipher.decode`.
-* [ ] Pasa linter con configuración provista.
-* [ ] Pasa pruebas unitarias.
-* [ ] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
+* [√] Usa VanillaJS.
+* [√] No utiliza `this`.
+* [√] Implementa `cipher.encode`.
+* [√] Implementa `cipher.decode`.
+* [] Pasa linter con configuración provista.
+* [√] Pasa pruebas unitarias.
+* [√] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
   mínimo del 50% de _branches_.
-* [ ] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
+* [√] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
   cifrado/descifrado.
-* [ ] Interfaz permite escribir un texto para ser cifrado.
-* [ ] Interfaz muestra el resultado del cifrado correctamente.
-* [ ] Interfaz permite escribir un texto para ser descifrado.
-* [ ] Interfaz muestra el resultado del descifrado correctamente.
+* [√] Interfaz permite escribir un texto para ser cifrado.
+* [√] Interfaz muestra el resultado del cifrado correctamente.
+* [√] Interfaz permite escribir un texto para ser descifrado.
+* [√] Interfaz muestra el resultado del descifrado correctamente.
 
 ### Parte Opcional: "Hacker edition"
 
-* [ ] Cifra/descifra minúsculas
+* [√] Cifra/descifra minúsculas
 * [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
-* [ ] Permite usar un `offset` negativo.
+* [√] Permite usar un `offset` negativo.
