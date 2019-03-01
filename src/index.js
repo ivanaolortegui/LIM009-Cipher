@@ -109,7 +109,7 @@ const functionDecode = (inputN, inputS, offset) => {
       output = window.cipher.encode(inputNumber,offset);
       output2 = window.cipher.encode(inputCode,offset);
     }
-    outputNumberEncode.innerHTML = output;
+    outputNumberEncode.innerHTML = output; 
     outputCodeEncode.innerHTML = output2;
   };
 

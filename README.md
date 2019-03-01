@@ -16,17 +16,12 @@
 ***
 
 ## Preámbulo
-En este mundo digital la privacidad y seguridad de los datos personales se encuentran en constante amenaza. Es por eso que **SECURITY BANK**, al estar enfocado al mundo finacieros, le da al usuario la opción de crear contraseñas y cifrar números bancarios para lograr una óptima seguridad y protección.
+En este mundo digital la privacidad y seguridad de los datos personales se encuentran en constante amenaza. Es por eso que **SECURITY BANK**, al estar enfocado al mundo finacieros, le da al usuario la opción de crear contraseñas y cifrado números bancarios para lograr una óptima seguridad y protección.
 
-Para ello, **SECURITY BANK** cuenta con el Cifrado César, el cuál consiste en:
+Para ello, **SECURITY BANK** cuenta con unos de los métodos de cifrado más conocidos **el Cifrado César** el cual consiste en: sustituir o desplazar una letra del texto original por otra que se encuentra en un número fijo de posiciones más adelante en el mismo alfabeto.
 
-
-especificamente a los usuarios  pertmite a los usuarios crar contraseñas para proteger sus tarjetas,
-Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
-
+específicamente a los usuarios  permite a los usuarios crear contraseñas para proteger sus tarjetas,
 ![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
-
-El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
 
 Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
 
@@ -53,6 +48,9 @@ Algunas ideas de ejemplo:
 
 ## Proceso de diseño
 
+### Diagrama de flujo 
+![Sin titulo](img-readme/Diagrama-flujo.jpg)
+
 ### Prototipo de baja fidelidad 
 ![Sin titulo](img-readme/sketch-inicio.jpg)
 ![Sin titulo](img-readme/sketch-menu.jpg)
@@ -68,8 +66,24 @@ Algunas ideas de ejemplo:
 
 ## Historias de Usuario
 
-(Historia 1)
-(Historia 2)
+
+### Historia de Usuario 1
+**Yo como:** Usuario
+**Quiero:** Al entrar a la página de inicio ver una descripción de la aplicación y testimonios de personas.
+**Funcionalidad:** Para que el usuario tenga una breve introducción de la aplicación.
+**Definición de terminado:** El usuario al entrar a la aplicación tendrá una descripción de **Security Bank** e imagenes referentes al tema.
+
+### Historia de Usuario 2
+**Yo como:** Usuario
+**Quiero:** Cifrar datos personales en mayúscula y números de tarjetas bancarias, con una clave que puede ser un número positivo o negativo.
+**Funcionalidad:** Para que el usuario pueda cifrar sus datos y números de tarjetas bancarias con un número de desplazamiento negativo o positivo.
+**Definición de terminado:** El usuario ingresará sus datos personales o número de tarjeta en un input y en el otro input ingresa el número de desplazamiento y al darle click a cifrar le de un mensaje cifrado.
+
+### Historia de Usuario 3
+**Yo como:** Usuario
+**Quiero:** Descifrar datos personales en mayúscula y números de tarjetas bancarias, con una clave que puede ser un número positivo o negativo.
+**Funcionalidad:** Para que el usuario pueda descifrar sus datos y números de tarjetas bancarias con un número de desplazamiento negativo o positivo.
+**Definición de terminado:** El usuario ingresará sus datos personales o número de tarjeta cifrados en un input y en el otro input ingresa el número de desplazamiento y al darle click a descifrar le de un mensaje descifrado.
 
 
 ## Definición del producto
@@ -80,14 +94,15 @@ En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proces
 
 #### ¿Quiénes son los principales usuarios de producto.?
 
-  Los principales usuarios de la herramienta digital **Security Bank** son todos aquellos usuarios que necesitan proteger sus datos y números de tarjetas de crédito a la hora de compartir con un familiar o persona de su confianza.
+ Los principales usuarios de la herramienta digital **Security Bank** son todos aquellos usuarios que necesitan proteger sus datos y números de tarjetas de crédito a la hora de compartir con un familiar o persona de su confianza.
 
 #### ¿Cuáles son los objetivos de estos usuarios en relación con tu producto?
-  Los objetos principales son que el usuario al usar esta aplicación pueda cifrar su tarjetas y datos personales con un número de desplazamiento y al compartirlo con su receptor solo podra descifralo con el número de dezplamiento compartido. La aplicación debe ser sencilla de usar y sobretodo muy útil para el usuario y tenga una sensación de seguridad y confianza a la hora de comprartir sus números de tarjetas con alguien más que solo pueda saber con quien comparta el offset o clave secreta para tener una comunicación más secreta.
+ Los objetos principales son que el usuario al usar esta aplicación pueda cifrar su tarjetas y datos personales con un número de desplazamiento y al compartirlo con su receptor sólo podrá descifrarlo con el número de desplazamiento compartido. La aplicación debe ser sencilla de usar y sobretodo muy útil para el usuario y tenga una sensación de seguridad y confianza a la hora de compartir sus números de tarjetas con alguien más que solo pueda saber con quien comparta el offset o clave secreta para tener una comunicación más secreta.
 
 #### ¿Cómo crees que el producto que estás creando está resolviendo sus problemas?
-   
-  El producto esta resolviendo problemas de inseguridad o de robo de numeros de tarjetas, ya que solo con quien el usuario comparta su numero de tarjetas cifrada y clave secreta serán los unicos en tener acceso a los datos reales a la hora de descifrar el mensaje secreto.
+ 
+ El producto está resolviendo problemas de inseguridad o de robo de números de tarjetas, ya que solo con quien el usuario comparta su número de tarjetas cifrada y clave secreta serán los únicos en tener acceso a los datos reales a la hora de descifrar el mensaje secreto.
+
 
 ## Interfaz de usuario (UI)
 
@@ -97,9 +112,12 @@ En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proces
 
 (Usar una gif de la UI de la pag)
 
+
 ## Planning
+El proyecto se realizó en 2 semanas, se trabajó en dos sprints de una semana cada uno y planifique mis tareas usando la metodología scrum o agile.
 
 ### Tablero Kanban
+El tablero kanban me fue una excelente herramienta de ejecutar la metodología scrum y gestionar el proyecto, me ayudó mucho a ver mi progreso y detectar obstáculos.
 
 ![Sin titulo](img-readme/tablero.jpg)
 ![Sin titulo](img-readme/el-tablero-yo.jpg)
@@ -298,10 +316,10 @@ Esta sección está  para ayudarte a llevar un control de lo que vas completando
 
 ### Parte Obligatoria
 
-* [] `README.md` incluye info sobre proceso y decisiones de diseño.
+* [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
 * [ ] `README.md` explica claramente quiénes son los usuarios y su relación con el producto.
 * [ ] `README.md` explica claramente cómo el producto soluciona los problemas/necesidades de los usuarios.
-* [√] Usa VanillaJS.
+* [ √] Usa VanillaJS.
 * [√] No utiliza `this`.
 * [√] Implementa `cipher.encode`.
 * [√] Implementa `cipher.decode`.

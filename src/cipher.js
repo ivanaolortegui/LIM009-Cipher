@@ -4,13 +4,16 @@ window.cipher = {
     for (let i = 0; i < input.length; i++) {
       const codeAscci = input.charCodeAt(i);
       if(codeAscci >=65 && codeAscci<=90) {
-        const formula = String.fromCharCode((codeAscci - 65 + offset) % 26 + 65);
+        let sumOffset = offset % 26 ===0 ? offset + 5 : offset;
+        const formula = String.fromCharCode((codeAscci - 65 + sumOffset )% 26 + 65);
         output += formula;
       } else if(codeAscci>=97&&codeAscci<=122) {
-        const formula = String.fromCharCode((codeAscci - 97 + offset) % 26 + 97);
+        let sumOffset = offset % 26 ===0 ? offset + 5 : offset;
+        const formula = String.fromCharCode((codeAscci - 97 + sumOffset) % 26 + 97);
         output += formula;
       } else if(codeAscci >= 48 && codeAscci <= 57) {
-        const formula = String.fromCharCode((codeAscci- 48 + offset) % 10 + 48);
+        let sumOffset =offset % 10 ===0 ? offset + 5 : offset;
+        const formula = String.fromCharCode((codeAscci- 48 + sumOffset) % 10 + 48);
         output +=formula;
       } else {
         output +=String.fromCharCode(codeAscci);
@@ -23,15 +26,18 @@ window.cipher = {
     for (let i = 0; i < input.length; i++) {
       const codeAscci = input.charCodeAt(i);
       if(codeAscci >= 65 && codeAscci <= 90 ) {
-        const formula = (codeAscci - 65 - offset % 26)  % 26 + 65;
+        let sumOffset = offset % 26 ===0 ? offset + 5 : offset;
+        const formula = (codeAscci - 65 - sumOffset % 26)  % 26 + 65;
         let newLetter = String.fromCharCode(formula < 65 ? formula + 26 : formula);
         output += newLetter;
       } else if (codeAscci >= 97 && codeAscci <= 122) {
-        const formula = (codeAscci - 97 - offset % 26) % 26 + 97;
+        let sumOffset = offset % 26 ===0 ? offset + 5 : offset;
+        const formula = (codeAscci - 97 - sumOffset % 26) % 26 + 97;
         let newLetter = String.fromCharCode(formula < 97 ? formula + 26 : formula);
         output += newLetter;
       } else if (codeAscci >= 48 && codeAscci <= 57){
-        const formula = (codeAscci - 48 - offset % 10)% 10 + 48;
+        let sumOffset =offset % 10 ===0 ? offset + 5 : offset;
+        const formula = (codeAscci - 48 - sumOffset % 10)% 10 + 48;
         let newLetter = String.fromCharCode(formula < 48 ? formula + 10 : formula);
         output += newLetter;
       }else {
