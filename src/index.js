@@ -1,5 +1,4 @@
 /* Acá va tu código */
-
 // Los ids de los formularios se guardan en constantes para luego ser manipulados. 
 const inputName = document.getElementById('input-name');
 const inputSurname = document.getElementById('input-surname');
@@ -27,7 +26,8 @@ const outputCodeEncode = document.getElementById('output-code-encode')
 const btnEncodeCard =document.getElementById('btn-encode-card');
 
 
-if(btnEncode){
+
+if(btnEncode !=null ){
 const functionEncode = (inputN, inputS, offset) => {
   let output = '';
   let output2 = '';
@@ -53,11 +53,10 @@ const functionEncode = (inputN, inputS, offset) => {
     let inputSurnameValue = inputSurname.value;
     functionEncode(inputNameValue, inputSurnameValue, offsetValue)
   }) 
-} else if (btnDecode) {
+} else if (btnDecode !=null) {
 const functionDecode = (inputN, inputS, offset) => {
   let output = '';
   let output2 = '';
-  
   if(offset < 0) {
     let negativeOffset = offset *-1;
     output = window.cipher.encode(inputN, negativeOffset);
@@ -76,10 +75,18 @@ const functionDecode = (inputN, inputS, offset) => {
     let offsetValue = parseInt(offsetEncode.value);
     functionDecode(inputNameValue, inputSurnameValue, offsetValue)
   })
-} else if (btnDecodeCard) {
+} else if (btnDecodeCard !=null) {
   const functionDecodeCard = (inputNumber,inputCode,offset) =>{ 
-    let output = window.cipher.decode(inputNumber,offset);
-    let output2 = window.cipher.decode(inputCode,offset);
+    let output = '';
+    let output2 = '';
+    if (offset < 0) {
+      let negativeOffset = offset * -1;
+      output = window.cipher.decode(inputNumber,negativeOffset);
+      output2 = window.cipher.decode(inputCode,negativeOffset);
+    } else {
+      output = window.cipher.decode(inputNumber,offset);
+      output2 = window.cipher.decode(inputCode,offset);
+    }
     outputNumberDecode.innerHTML = output;
     outputCodeDecode.innerHTML = output2;
   };
@@ -92,8 +99,16 @@ const functionDecode = (inputN, inputS, offset) => {
   })
 } else {
   const functionEncodeCard = (inputNumber,inputCode,offset) =>{ 
-    let output = window.cipher.encode(inputNumber,offset);
-    let output2 = window.cipher.encode(inputCode,offset);
+    let output = '';
+    let output2 = '';
+    if(offset < 0) {
+      let negativeOffset = offset*-1;
+      output = window.cipher.decode(inputNumber,negativeOffset);
+      output2 = window.cipher.decode(inputCode,negativeOffset);
+    } else {
+      output = window.cipher.encode(inputNumber,offset);
+      output2 = window.cipher.encode(inputCode,offset);
+    }
     outputNumberEncode.innerHTML = output;
     outputCodeEncode.innerHTML = output2;
   };

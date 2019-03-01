@@ -102,6 +102,9 @@ header label:hover {
 	100% {margin-left: -300%;}
 }
 
+.content{
+  margin: 0% 1.5% 4%;
+}
 
 form {
   background: #3554A4;
