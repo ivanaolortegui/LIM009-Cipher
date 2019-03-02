@@ -16,9 +16,9 @@
 ***
 
 ## Preámbulo
-En este mundo digital la privacidad y seguridad de los datos personales se encuentran en constante amenaza. Es por eso que **SECURITY BANK**, al estar enfocado al mundo finacieros, le da al usuario la opción de crear contraseñas y cifrado números bancarios para lograr una óptima seguridad y protección.
+En este mundo digital la privacidad y seguridad de los datos personales se encuentran en constante amenaza. Es por eso que **SECURITY BANK**, al estar enfocado en el mundo finaciero y seguridad de datos personales, le da al usuario la opción de crear mensajes cifrados y números de tarjetas bancarias para lograr una óptima seguridad y protección.
 
-Para ello, **SECURITY BANK** cuenta con unos de los métodos de cifrado más conocidos **el Cifrado César** el cual consiste en: sustituir o desplazar una letra del texto original por otra que se encuentra en un número fijo de posiciones más adelante en el mismo alfabeto.
+🔒💳 Para ello, **SECURITY BANK** cuenta con unos de los métodos de cifrado más conocidos **el Cifrado César** el cual consiste en: sustituir o desplazar una letra del texto original por otra que se encuentra en un número fijo de posiciones más adelante en el mismo alfabeto.
 
 específicamente a los usuarios  permite a los usuarios crear contraseñas para proteger sus tarjetas,
 ![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
@@ -67,22 +67,34 @@ Algunas ideas de ejemplo:
 ## Historias de Usuario
 
 
-### Historia de Usuario 1
-**Yo como:** Usuario
-**Quiero:** Al entrar a la página de inicio ver una descripción de la aplicación y testimonios de personas.
-**Funcionalidad:** Para que el usuario tenga una breve introducción de la aplicación.
+### Historia de Usuario 1  
+
+**Yo como:** Usuario.    
+
+**Quiero:** Al entrar a la página de inicio ver una descripción de la aplicación y testimonios de personas.  
+
+**Funcionalidad:** Para que el usuario tenga una breve introducción de la aplicación.   
+
 **Definición de terminado:** El usuario al entrar a la aplicación tendrá una descripción de **Security Bank** e imagenes referentes al tema.
 
 ### Historia de Usuario 2
-**Yo como:** Usuario
-**Quiero:** Cifrar datos personales en mayúscula y números de tarjetas bancarias, con una clave que puede ser un número positivo o negativo.
+
+**Yo como:** Usuario.    
+
+**Quiero:** Cifrar datos personales en mayúscula y números de tarjetas bancarias, con una clave que puede ser un número positivo o negativo.   
+
 **Funcionalidad:** Para que el usuario pueda cifrar sus datos y números de tarjetas bancarias con un número de desplazamiento negativo o positivo.
+
 **Definición de terminado:** El usuario ingresará sus datos personales o número de tarjeta en un input y en el otro input ingresa el número de desplazamiento y al darle click a cifrar le de un mensaje cifrado.
 
 ### Historia de Usuario 3
-**Yo como:** Usuario
-**Quiero:** Descifrar datos personales en mayúscula y números de tarjetas bancarias, con una clave que puede ser un número positivo o negativo.
-**Funcionalidad:** Para que el usuario pueda descifrar sus datos y números de tarjetas bancarias con un número de desplazamiento negativo o positivo.
+
+**Yo como:** Usuario.   
+
+**Quiero:** Descifrar datos personales en mayúscula y números de tarjetas bancarias, con una clave que puede ser un número positivo o negativo.   
+
+**Funcionalidad:** Para que el usuario pueda descifrar sus datos y números de tarjetas bancarias con un número de desplazamiento negativo o positivo.  
+
 **Definición de terminado:** El usuario ingresará sus datos personales o número de tarjeta cifrados en un input y en el otro input ingresa el número de desplazamiento y al darle click a descifrar le de un mensaje descifrado.
 
 
@@ -312,30 +324,30 @@ Herramientas:
 
 ## Checklist
 
-Esta sección está  para ayudarte a llevar un control de lo que vas completando.
+Esta sección está  mostrar los requerimientos que he completado.
 
 ### Parte Obligatoria
 
 * [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
-* [ ] `README.md` explica claramente quiénes son los usuarios y su relación con el producto.
-* [ ] `README.md` explica claramente cómo el producto soluciona los problemas/necesidades de los usuarios.
-* [ √] Usa VanillaJS.
-* [√] No utiliza `this`.
-* [√] Implementa `cipher.encode`.
-* [√] Implementa `cipher.decode`.
-* [] Pasa linter con configuración provista.
-* [√] Pasa pruebas unitarias.
-* [√] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
+☑ `README.md` explica claramente quiénes son los usuarios y su relación con el producto.
+☑ `README.md` explica claramente cómo el producto soluciona los problemas/necesidades de los usuarios.
+☑ Usa VanillaJS.
+☑ No utiliza `this`.
+☑ Implementa `cipher.encode`.
+☑ Implementa `cipher.decode`.
+☑ Pasa linter con configuración provista.
+☑ Pasa pruebas unitarias.
+☑ Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
   mínimo del 50% de _branches_.
-* [√] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
+☑ Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
   cifrado/descifrado.
-* [√] Interfaz permite escribir un texto para ser cifrado.
-* [√] Interfaz muestra el resultado del cifrado correctamente.
-* [√] Interfaz permite escribir un texto para ser descifrado.
-* [√] Interfaz muestra el resultado del descifrado correctamente.
+☑ Interfaz permite escribir un texto para ser cifrado.
+☑ Interfaz muestra el resultado del cifrado correctamente.
+☑ Interfaz permite escribir un texto para ser descifrado.
+☑ Interfaz muestra el resultado del descifrado correctamente.
 
 ### Parte Opcional: "Hacker edition"
 
-* [√] Cifra/descifra minúsculas
+☑ Cifra/descifra minúsculas
 * [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
-* [√] Permite usar un `offset` negativo.
+☑ Permite usar un `offset` negativo.
