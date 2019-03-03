@@ -1,74 +1,160 @@
 <!DOCTYPE html>
-<html lang="es" >
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="icon" type="image/png" href="img/icon-security.png"/>
-    <meta name="description" content="Descripción de la WEB">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css"/>
-  </head>
-  <body>
-      <header> 
-        <a href="index.html">
-          <img class="logo" src="img/security-payment.png" alt="logo de security bank">
-        </a>   
-        <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"> <img src="img/menu.png" alt="lol-logo">
-        </label>  
-        <nav class="menu">
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="icon" type="image/png" href="img/icon-security.png" />
+  <meta name="description" content="Descripción de la WEB">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img class="logo" src="img/security-payment.png" alt="logo de security bank">
+    </a>
+    <input type="checkbox" id="btn-menu">
+    <label for="btn-menu"> <img src="img/menu.png" alt="menu-logo">
+    </label>
+    <nav class="menu">
+      <ul>
+        <li> <a href="">Instrucciones</a> </li>
+        <li> <a>Cifrar</a>
           <ul>
-            <li> <a href="">Instrucciones</a> </li>
-            <li> <a>Cifrar</a> 
-              <ul>
-                <li> <a href="encode.html"> Cifrar Nombres y Apellidos </a> </li>
-                <li> <a href="encode.1.html"> Cifrar Tarjetas </a> </li>
-              </ul>
-            </li>
-            <li> <a>Descifrar</a>
-              <ul>
-                  <li> <a href="decode.html"> Descifrar Nombres y Apellidos </a> </li>
-                  <li> <a href="decode.1.html"> Descifrar Tarjetas </a> </li>    
-              </ul>
-            </li>
+            <li id="encode-name"> <a href="#"> Cifrar Nombres y Apellidos </a> </li>
+            <li id="encode-card"> <a href="#"> Cifrar Tarjetas </a> </li>
           </ul>
-        </nav>
-      </header>  
-      <section>      
-          <article>
-            <div class="slider">
-              <ul>
-                <li> <img src="img/seguridadtarjetas.jpg" alt="seguridad de datos"> </li>    
-                <li> <img src="img/proteger-tarjetas-p.jpg" alt="seguridad de datos"> </li>  
-                <li> <img src="img/seguridad-tarjeta-online.jpg" alt=""> </li>
-                <li> <img src="img/seguridad-tarjetas.jpg" alt=""> </li>
-              </ul>                  
-            </div>  
-            </article>      
-      </section>
-      <section class="content" >
+        </li>
+        <li> <a>Descifrar</a>
+          <ul>
+            <li id="decode-name"> <a href="#"> Descifrar Nombres y Apellidos </a> </li>
+            <li id="decode-card"> <a href="#"> Descifrar Tarjetas </a> </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!--Página de inicio-->
+    <section id="homepage">
+      <article>
+        <div class="slider">
+          <ul>
+            <li> <img src="img/seguridadtarjetas.jpg" alt="seguridad de datos"> </li>
+            <li> <img src="img/proteger-tarjetas-p.jpg" alt="seguridad de datos"> </li>
+            <li> <img src="img/seguridad-tarjeta-online.jpg" alt=""> </li>
+            <li> <img src="img/seguridad-tarjetas.jpg" alt=""> </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="content">
         <h2>SECURITY BANK</h2>
-          <h3>En esta era digital cada día es más habitual encontrarse con hackers o programas maliciosos que pueden llegar a obtener datos personales e información bancaria de una persona con la intención de robos o extorsión. 
-          En la búsqueda de una seguridad digital, que frenen o reduzcan los casos de violación de identidad o datos bancarios nace Security Bank.
-          Security Bank es una herramienta web que encripta y desencripta datos personales y número de tarjetas bancarias y además el usuario podrá indicar una clave secreta que podrá compartir con cualquier persona de confianza para una comunicación donde solo el emisor y receptor tenga acceso.
-         </h3>
-      </section>
-        <aside>         
-            <h3>Testimonios</h3>
-            <img src="img" alt="Testimonio de xxx xxxx">  
-            <p>La pagina funcionalmente es buena, realice el cifrado y descifrado sin ningun problema, referente al diseño 
-              de la interface maneja un estilo minimalista y contiene buenas imagenes, muy recomendable.
-              <br/>
-              Ad.
-            </p>
-        </aside>
-        <footer>
-            <h4>
-                © 2019 Copyright Security Bank. Todos los derechos reservados.
-            </h4>
-        </footer>
-     
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+        <h3>En esta era digital cada día es más habitual encontrarse con hackers o programas maliciosos que pueden
+          llegar
+          a
+          obtener datos personales e información bancaria de una persona con la intención de robos o extorsión.
+          En la búsqueda de una seguridad digital, que frenen o reduzcan los casos de violación de identidad o datos
+          bancarios nace Security Bank.
+          Security Bank es una herramienta web que encripta y desencripta datos personales y número de tarjetas
+          bancarias
+          y
+          además el usuario podrá indicar una clave secreta que podrá compartir con cualquier persona de confianza para
+          una
+          comunicación donde solo el emisor y receptor tenga acceso.
+        </h3>
+      </article>
+      <aside>
+        <h3>Testimonios</h3>
+        <img src="img" alt="Testimonio de xxx xxxx">
+        <p>La pagina funcionalmente es buena, realice el cifrado y descifrado sin ningun problema, referente al diseño
+          de la interface maneja un estilo minimalista y contiene buenas imagenes, muy recomendable.
+          <br />
+          Ad.
+        </p>
+      </aside>
+    </section>
+    <!--Pagina para cifrar nombres-->
+    <section id="page-encode-name">
+      <article>
+        <h3>Instrucciones</h3>
+        <h4>Primero ingresa tu nombre en el primer campo y tu apellido en el segundo campo</h4>
+        <h4>Secundo Elige un PIN o número secreto para cifrar tus datos personales </h4>
+        <h4>Dale click a cifrar y obtendras tus datos personales codificados</h4>
+      </article>
+      <article>
+        <form name="formulario">
+          <h2>Cifrar tu nombre y Apellido</h2>
+          <input type="text" id="input-name" name="nombre" placeholder="Tu Nombre">
+          <input type="text" id="input-surname" name="apellido" placeholder="Tu Apellido">
+          <input type="number" id="offset" name="pass" placeholder="Clave secreta">
+          <button type="button" class="btn" id="btn-encode">Cifrar </button>
+          <h3>Tu nombre cifrado es: <output id="output-name"></output> </h3>
+          <h3>Tu Apellido cifrado es: <output id="output-surname"></output></h3>
+        </form>
+      </article>
+    </section>
+    <!--Página para descifra-->
+    <section id="page-encode-card">
+      <article>
+        <form class="form">
+          <h2>Cifra tu tarjeta</h2>
+          <input class="input" type="number" id="input-number-encode" name="nombre2"
+            placeholder="Ingresa tu número de tarjeta de 20 digitos">
+          <input class="input" type="number" id="input-code-encode" name="apellido2"
+            placeholder="Ingresa tu codigo cvv de tarjeta de 3 digitos">
+          <input class="input" type="password" id="offset-card-encode" name="pass" placeholder="Clave secreta">
+          <button type="button" class="btn-card" id="btn-encode-card">Cifrar </button>
+          <h3>Tu número de tarjeta cifrado es: </h3>
+          <output id="output-number-encode"></output>
+          <h3>Tu código de tarjeta cifrado es:</h3>
+          <output id="output-code-encode"></output>
+        </form>
+      </article>
+    </section>
+    <!--Pagina para descifrar nombres-->
+    <section id="page-decode-name">
+      <article>
+        <form name="formulario2">
+          <h2>Descifrar tu nombre y Apellido</h2>
+          <input type="text" id="input-name-encode" name="nombre2" placeholder="Tu Nombre">
+          <input type="text" id="input-surname-encode" name="apellido2" placeholder="Tu Apellido">
+          <input type="password" id="offset-encode" name="pass" placeholder="Clave secreta">
+          <button type="button" class="btn" id="btn-decode">Descifrar </button>
+          <h3>Tu nombre descifrado es: <output id="output-name-decode"></output> </h3>
+          <h3>Tu Apellido descifrado es: <output id="output-surname-decode"></output></h3>
+        </form>
+      </article>
+    </section>
+    <!--Pagina descifrar tarjetas-->
+    <section id="page-decode-card">
+      <article>
+        <form class="form">
+          <h2>Descifra tu tarjeta</h2>
+          <input class="input" type="number" id="input-number-decode" name="nombre2"
+            placeholder="Ingresa tu número de tarjeta de 20 digitos">
+          <input class="input" type="number" id="input-code-decode" name="apellido2"
+            placeholder="Ingresa tu codigo cvv de tarjeta de 3 digitos">
+          <input class="input" type="password" id="offset-card-decode" name="pass" placeholder="Clave secreta">
+          <button type="button" class="btn-card" id="btn-decode-card">Descifrar </button>
+          <h3>Tu número de tarjeta descifrado es: </h3>
+          <output id="output-number-decode"></output>
+          <h3>Tu código de tarjeta descifrado es:</h3>
+          <output id="output-code-decode"></output>
+        </form>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <h4>
+      © 2019 Copyright Security Bank. Todos los derechos reservados.
+    </h4>
+  </footer>
+
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
