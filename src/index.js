@@ -45,6 +45,8 @@ pageEncodeCard.style.display = 'none';
 pageDecodeName.style.display = 'none';
 pageDecodeCard.style.display = 'none';
 
+//Aqui registro un evento que dice : Oye encodeName Escuchame cuando  haga click y ejecutame lo que hay dentro  
+
 encodeName.addEventListener('click', () => {
   homepage.style.display = 'none';
   pageEncodeName.style.display = 'block';
