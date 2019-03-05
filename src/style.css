@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
+
 * {
   box-sizing: border-box;
   padding:0px;
@@ -6,7 +8,7 @@
 body {
   background-color: #CADEE3;
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
   color: #3E6B79;
   text-align: center;
   
@@ -23,6 +25,8 @@ display: block;
 header {
   width: 100%;
   background: #C9BFB0;
+  font-weight: bolder;
+
 }
 .logo {
   width: 4%;
@@ -209,9 +213,8 @@ form {
  /* Pie de página  */
 footer {
   width: 100%;
-  background: #C9BFB0;
   padding: 3% 1% 4% 0%;
-  color: #3E6B79;
+  color:#C9BFB0;
   position: relative;
   bottom: 0;
 }
