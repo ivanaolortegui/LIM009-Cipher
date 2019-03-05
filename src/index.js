@@ -81,19 +81,19 @@ decodeCard.addEventListener('click', () => {
 
 
 const functionEncode = (inputN, inputS, offset) => {
-  let output = '';
-  let output2 = '';
+  let firstOutput = '';
+  let secondOutput = '';
   //Agregue condicionales para offset negativos
   if (offset < 0) {
     let negativeOffset = offset * -1;
-    output = window.cipher.decode(inputN, negativeOffset);
-    output2 = window.cipher.decode(inputS, negativeOffset);
+    firstOutput = cipher.decode(inputN, negativeOffset);
+   secondOutput = cipher.decode(inputS, negativeOffset);
   } else {
-    output = window.cipher.encode(inputN, offset);
-    output2 = window.cipher.encode(inputS, offset);
+    firstOutput = cipher.encode(inputN, offset);
+   secondOutput = cipher.encode(inputS, offset);
   }
-  outputName.innerHTML = output
-  outputSuername.innerHTML = output2 /* Aqui estoy asignado el valor que me 
+  outputName.innerHTML =firstOutput;
+  outputSuername.innerHTML = secondOutput /* Aqui estoy asignado el valor que me 
   retorna la función del respectivo objeto con su propiedad que estoy llamando;
   para pintarlo en la variable que representa el id. */
 
@@ -107,18 +107,18 @@ btnEncode.addEventListener('click', () => {
 })
 
 const functionDecode = (inputN, inputS, offset) => {
-  let output = '';
-  let output2 = '';
+  let firstOutput = '';
+  let secondOutput = '';
   if (offset < 0) {
     let negativeOffset = offset * -1;
-    output = window.cipher.encode(inputN, negativeOffset);
-    output2 = window.cipher.encode(inputS, negativeOffset);
+    firstOutput = cipher.encode(inputN, negativeOffset);
+    secondOutput = cipher.encode(inputS, negativeOffset);
   } else {
-    output = window.cipher.decode(inputN, offset);
-    output2 = window.cipher.decode(inputS, offset);
+    firstOutput = cipher.decode(inputN, offset);
+    secondOutput = cipher.decode(inputS, offset);
   }
-  outputNameDecode.innerHTML = output
-  outputSurnameDecode.innerHTML = output2
+  outputNameDecode.innerHTML = firstOutput;
+  outputSurnameDecode.innerHTML = secondOutput;
 };
 
 btnDecode.addEventListener('click', () => {
@@ -129,18 +129,18 @@ btnDecode.addEventListener('click', () => {
 })
 
 const functionDecodeCard = (inputNumber, inputCode, offset) => {
-  let output = '';
-  let output2 = '';
+  let firstOutput = '';
+  let secondOutput = '';
   if (offset < 0) {
     let negativeOffset = offset * -1;
-    output = window.cipher.decode(inputNumber, negativeOffset);
-    output2 = window.cipher.decode(inputCode, negativeOffset);
+    firstOutput = cipher.encode(inputNumber, negativeOffset);
+   secondOutput = cipher.encode(inputCode, negativeOffset);
   } else {
-    output = window.cipher.decode(inputNumber, offset);
-    output2 = window.cipher.decode(inputCode, offset);
+    firstOutput = cipher.decode(inputNumber, offset);
+   secondOutput = cipher.decode(inputCode, offset);
   }
-  outputNumberDecode.innerHTML = output;
-  outputCodeDecode.innerHTML = output2;
+  outputNumberDecode.innerHTML =firstOutput;
+  outputCodeDecode.innerHTML = secondOutput;
 };
 
 btnDecodeCard.addEventListener('click', () => {
@@ -151,18 +151,18 @@ btnDecodeCard.addEventListener('click', () => {
 })
 
 const functionEncodeCard = (inputNumber, inputCode, offset) => {
-  let output = '';
-  let output2 = '';
+  let firstOutput= '';
+  let secondOutput = '';
   if (offset < 0) {
     let negativeOffset = offset * -1;
-    output = window.cipher.decode(inputNumber, negativeOffset);
-    output2 = window.cipher.decode(inputCode, negativeOffset);
+    firstOutput = cipher.decode(inputNumber, negativeOffset);
+   secondOutput = cipher.decode(inputCode, negativeOffset);
   } else {
-    output = window.cipher.encode(inputNumber, offset);
-    output2 = window.cipher.encode(inputCode, offset);
+    firstOutput = cipher.encode(inputNumber, offset);
+   secondOutput = cipher.encode(inputCode, offset);
   }
-  outputNumberEncode.innerHTML = output;
-  outputCodeEncode.innerHTML = output2;
+  outputNumberEncode.innerHTML = firstOutput;
+  outputCodeEncode.innerHTML = secondOutput;
 };
 
 btnEncodeCard.addEventListener('click', () => {

@@ -19,6 +19,7 @@ display: block;
 .ocultar {
   display: none;
 }
+/* Cabecera  */
 header {
   width: 100%;
   background: #C9BFB0;
@@ -27,7 +28,7 @@ header {
   width: 4%;
   position: absolute;
   left:3% ;
-}
+} 
 
 #btn-menu {
   display: none;
@@ -73,6 +74,9 @@ header label:hover {
 .menu ul li a:hover + ul, .menu ul li ul:hover {
   display: block;
 }
+
+/* Slider */
+
 .slider {
 	width: 100%;
 	margin: auto ;
@@ -98,17 +102,6 @@ header label:hover {
   height: 80% ;
 }
 
-.content {
-  width: 80%;
-  text-align: left;
-  margin : 0 9% 6%;
-}
-h1 {
-  text-align: center;
-  margin: 0% 0 4%;
-}
-
-
 @keyframes cambio {
 	0% {margin-left: 0;}
 	20% {margin-left: 0;}
@@ -122,10 +115,23 @@ h1 {
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
 }
+
+.content {
+  width: 80%;
+  text-align: left;
+  margin : 0 9% 6%;
+}
+
+h1 {
+  text-align: center;
+  margin: 0% 0 4%;
+}
+
 .instructions{
   margin: 3%;
 }
 
+/* Estilos para los formularios */
 form {
   background: #3E6B79;
   border-radius:6px;
@@ -200,6 +206,7 @@ form {
   box-shadow:none;
 }
 
+ /* Pie de página  */
 footer {
   width: 100%;
   background: #C9BFB0;

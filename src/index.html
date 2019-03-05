@@ -66,84 +66,76 @@
       </div>
     </section>
     <!--Pagina para cifrar nombres-->
-    <section id="page-encode-name">
-      <article class="instructions">
-        <h3>Instrucciones</h3>
-        <h4>Primero ingresa tu nombre en el primer campo y tu apellido en el segundo campo</h4>
-        <h4>Secundo Elige un PIN o número secreto para cifrar tus datos personales </h4>
-        <h4>Dale click a cifrar y obtendras tus datos personales codificados</h4>
-      </article>
-      <article>
+    <section id="page-encode-name" class="instructions">
+      <h3>Instrucciones</h3>
+      <h4>Primero ingresa tu nombre en el primer campo y tu apellido en el segundo campo</h4>
+      <h4>Secundo Elige un PIN o número secreto para cifrar tus datos personales </h4>
+      <h4>Dale click a cifrar y obtendras tus datos personales codificados</h4>
+      <div>
         <form>
-          <input type="text" id="input-name" name="nombre" placeholder="Tu Nombre">
-          <input type="text" id="input-surname" name="apellido" placeholder="Tu Apellido">
+          <input type="text" id="input-name" name="name" placeholder="Tu Nombre">
+          <input type="text" id="input-surname" name="surname" placeholder="Tu Apellido">
           <input type="number" id="offset" name="pass" placeholder="Clave secreta">
           <button type="button" class="btn" id="btn-encode">Cifrar </button>
           <output id="output-name"></output>
           <output id="output-surname"></output>
         </form>
-      </article>
+      </div>
     </section>
     <!--Página para descifra-->
-    <section id="page-encode-card">
-      <article class="instructions">
-        <h3>Instrucciones</h3>
-        <h4>Primero ingresa tu número de tarjeta en el primer campo y código cv en el segundo campo</h4>
-        <h4>Secundo Elige un PIN o número secreto para cifrar tus números de tarjetas bancarias</h4>
-        <h4>Dale click a cifrar y obtendras tus datos personales codificados</h4>
-      </article>
-      <article>
+    <section id="page-encode-card" class="instructions">
+      <h3>Instrucciones</h3>
+      <h4>Primero ingresa tu número de tarjeta en el primer campo y código cv en el segundo campo</h4>
+      <h4>Secundo Elige un PIN o número secreto para cifrar tus números de tarjetas bancarias</h4>
+      <h4>Dale click a cifrar y obtendras tus datos personales codificados</h4>
+      <div>
         <form class="form">
-          <input class="input" type="number" id="input-number-encode" name="nombre2"
+          <input class="input" type="number" id="input-number-encode" name="card-number"
             placeholder="Ingresa tu número de tarjeta de 20 digitos">
-          <input class="input" type="number" id="input-code-encode" name="apellido2"
+          <input class="input" type="number" id="input-code-encode" name="card-code"
             placeholder="Ingresa tu codigo cvv de tarjeta de 3 digitos">
-          <input class="input" type="password" id="offset-card-encode" name="pass" placeholder="Clave secreta">
+          <input class="input" type="number" id="offset-card-encode" name="pass" placeholder="Clave secreta">
           <button type="button" class="btn-card" id="btn-encode-card">Cifrar </button>
           <output id="output-number-encode"></output>
           <output id="output-code-encode"></output>
         </form>
-      </article>
+      </div>
     </section>
     <!--Pagina para descifrar nombres-->
-    <section id="page-decode-name">
-      <article class="instructions">
-        <h3>Instrucciones</h3>
-        <h4>Primero ingresa tu nombre en el primer campo y tu apellido en el segundo campo</h4>
-        <h4>Secundo introduce el PIN o número secreto para descifrar tus datos personales </h4>
-        <h4>Dale click a descifrar y obtendras tus datos personales descodificados</h4>
-      </article>
-      <article>
+    <section id="page-decode-name" class="instructions">
+      <h3>Instrucciones</h3>
+      <h4>Primero ingresa tu nombre en el primer campo y tu apellido en el segundo campo</h4>
+      <h4>Secundo introduce el PIN o número secreto para descifrar tus datos personales </h4>
+      <h4>Dale click a descifrar y obtendras tus datos personales descodificados</h4>
+      <div>
         <form>
-          <input type="text" id="input-name-encode" name="nombre2" placeholder="Tu Nombre">
-          <input type="text" id="input-surname-encode" name="apellido2" placeholder="Tu Apellido">
-          <input type="password" id="offset-encode" name="pass" placeholder="Clave secreta">
+          <input type="text" id="input-name-encode" name="name" placeholder="Tu Nombre">
+          <input type="text" id="input-surname-encode" name="surname" placeholder="Tu Apellido">
+          <input type="number" id="offset-encode" name="number" placeholder="Clave secreta">
           <button type="button" class="btn" id="btn-decode">Descifrar </button>
           <output id="output-name-decode"></output>
           <output id="output-surname-decode"></output>
         </form>
-      </article>
+      </div>
     </section>
     <!--Pagina descifrar tarjetas-->
-    <section id="page-decode-card">
-      <article class="instructions">
-        <h3>Instrucciones</h3>
-        <h4>Primero: ingresa tu número de tarjeta en el primer campo y código cv en el segundo campo</h4>
-        <h4>Secundo: Elige un PIN o número secreto para cifrar tus números de tarjetas bancarias</h4>
-        <h4>Dale click a cifrar y obtendras tus números de tarjetas codificados</h4>
-      </article>
-      <article>
+    <section id="page-decode-card" class="instructions">
+      <h3>Instrucciones</h3>
+      <h4>Primero: ingresa tu número de tarjeta en el primer campo y código cv en el segundo campo</h4>
+      <h4>Secundo: Elige un PIN o número secreto para cifrar tus números de tarjetas bancarias</h4>
+      <h4>Dale click a cifrar y obtendras tus números de tarjetas codificados</h4>
+      <div>
         <form class="form">
-          <input class="input" type="number" id="input-number-decode" name="nombre2"
+          <input class="input" type="number" id="input-number-decode" name="card-number"
             placeholder="Ingresa tu número de tarjeta de 20 digitos">
-          <input class="input" type="number" id="input-code-decode" name="apellido2"
+          <input class="input" type="number" id="input-code-decode" name="card-code"
             placeholder="Ingresa tu codigo cvv de tarjeta de 3 digitos">
-          <input class="input" type="password" id="offset-card-decode" name="pass" placeholder="Clave secreta">
+          <input class="input" type="number" id="offset-card-decode" name="pass" placeholder="Clave secreta">
           <button type="button" class="btn-card" id="btn-decode-card">Descifrar </button>
           <output id="output-number-decode"></output>
           <output id="output-code-decode"></output>
         </form>
-      </article>
+      </div>
     </section>
   </main>
   <footer>
