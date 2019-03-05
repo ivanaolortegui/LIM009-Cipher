@@ -29,14 +29,14 @@ const inputNumberDecode = document.getElementById('input-number-decode');
 const inputCodeDecode = document.getElementById('input-code-decode');
 const offsetCarDecode = document.getElementById('offset-card-decode');
 const outputNumberDecode = document.getElementById('output-number-decode');
-const outputCodeDecode = document.getElementById('output-code-decode')
+const outputCodeDecode = document.getElementById('output-code-decode');
 const btnDecodeCard = document.getElementById('btn-decode-card');
 
 const inputNumberEncode = document.getElementById('input-number-encode');
 const inputCodeEncode = document.getElementById('input-code-encode');
 const offsetCardEncode = document.getElementById('offset-card-encode');
 const outputNumberEncode = document.getElementById('output-number-encode');
-const outputCodeEncode = document.getElementById('output-code-encode')
+const outputCodeEncode = document.getElementById('output-code-encode');
 const btnEncodeCard = document.getElementById('btn-encode-card');
 
 
@@ -45,7 +45,7 @@ pageEncodeCard.style.display = 'none';
 pageDecodeName.style.display = 'none';
 pageDecodeCard.style.display = 'none';
 
-//Aqui registro un evento que dice : Oye encodeName Escuchame cuando  haga click y ejecutame lo que hay dentro  
+// Aqui registro un evento que dice : Oye encodeName Escuchame cuando  haga click y ejecutame lo que hay dentro  
 
 encodeName.addEventListener('click', () => {
   homepage.style.display = 'none';
@@ -53,7 +53,7 @@ encodeName.addEventListener('click', () => {
   pageEncodeCard.style.display = 'none';
   pageDecodeName.style.display = 'none';
   pageDecodeCard.style.display = 'none';
-})
+});
 
 encodeCard.addEventListener('click', () => {
   homepage.style.display = 'none';
@@ -61,7 +61,7 @@ encodeCard.addEventListener('click', () => {
   pageEncodeCard.style.display = 'block';
   pageDecodeName.style.display = 'none';
   pageDecodeCard.style.display = 'none';
-})
+});
 
 decodeName.addEventListener('click', () => {
   homepage.style.display = 'none';
@@ -69,7 +69,7 @@ decodeName.addEventListener('click', () => {
   pageEncodeCard.style.display = 'none';
   pageDecodeName.style.display = 'block';
   pageDecodeCard.style.display = 'none';
-})
+});
 
 decodeCard.addEventListener('click', () => {
   homepage.style.display = 'none';
@@ -77,13 +77,14 @@ decodeCard.addEventListener('click', () => {
   pageEncodeCard.style.display = 'none';
   pageDecodeName.style.display = 'none';
   pageDecodeCard.style.display = 'block';
-})
+});
 
 
 const functionEncode = (inputN, inputS, offset) => {
   let firstOutput = '';
   let secondOutput = '';
-  //Agregue condicionales para offset negativos
+  // Agregue condicionales para offset negativos
+
   if (offset < 0) {
     let negativeOffset = offset * -1;
     firstOutput = cipher.decode(inputN, negativeOffset);
@@ -93,7 +94,7 @@ const functionEncode = (inputN, inputS, offset) => {
     secondOutput = cipher.encode(inputS, offset);
   }
   outputName.innerHTML = firstOutput;
-  outputSuername.innerHTML = secondOutput /* Aqui estoy asignado el valor que me 
+  outputSuername.innerHTML = secondOutput; /* Aqui estoy asignado el valor que me 
   retorna la función del respectivo objeto con su propiedad que estoy llamando;
   para pintarlo en la variable que representa el id. */
 
@@ -123,9 +124,9 @@ const functionDecode = (inputN, inputS, offset) => {
 
 btnDecode.addEventListener('click', () => {
   let inputNameValue = inputNameEncode.value;
-  let inputSurnameValue = inputSurnameEncode.value
+  let inputSurnameValue = inputSurnameEncode.value;
   let offsetValue = parseInt(offsetEncode.value);
-  functionDecode(inputNameValue, inputSurnameValue, offsetValue)
+  functionDecode(inputNameValue, inputSurnameValue, offsetValue);
 })
 
 const functionDecodeCard = (inputNumber, inputCode, offset) => {
@@ -147,8 +148,8 @@ btnDecodeCard.addEventListener('click', () => {
   let inputNumberValue = inputNumberDecode.value;
   let inputCodeValue = inputCodeDecode.value;
   let offsetValue = parseInt(offsetCarDecode.value);
-  functionDecodeCard(inputNumberValue, inputCodeValue, offsetValue)
-})
+  functionDecodeCard(inputNumberValue, inputCodeValue, offsetValue);
+});
 
 const functionEncodeCard = (inputNumber, inputCode, offset) => {
   let firstOutput = '';
@@ -169,12 +170,5 @@ btnEncodeCard.addEventListener('click', () => {
   let inputNumberValue = inputNumberEncode.value;
   let inputCodeValue = inputCodeEncode.value;
   let offsetValue = parseInt(offsetCardEncode.value);
-  functionEncodeCard(inputNumberValue, inputCodeValue, offsetValue)
-})
-
-
-
-
-
-
-
+  functionEncodeCard(inputNumberValue, inputCodeValue, offsetValue);
+});
