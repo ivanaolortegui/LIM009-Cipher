@@ -16,6 +16,9 @@
 ***
 
 ## Preámbulo
+
+![Sin titulo](img-readme/security-bank.jpg)
+
 En este mundo digital la privacidad y seguridad de los datos personales se encuentran en constante amenaza. Es por eso que **SECURITY BANK**, al estar enfocado en el mundo finaciero y seguridad de datos personales, le da al usuario la opción de crear mensajes cifrados y números de tarjetas bancarias para lograr una óptima seguridad y protección.
 
 Para ello, **SECURITY BANK** cuenta con unos de los métodos de cifrado más conocidos **el Cifrado César** el cual consiste en: sustituir o desplazar una letra del texto original por otra que se encuentra en un número fijo de posiciones más adelante en el mismo alfabeto🔒💳 .
