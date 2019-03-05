@@ -87,12 +87,12 @@ const functionEncode = (inputN, inputS, offset) => {
   if (offset < 0) {
     let negativeOffset = offset * -1;
     firstOutput = cipher.decode(inputN, negativeOffset);
-   secondOutput = cipher.decode(inputS, negativeOffset);
+    secondOutput = cipher.decode(inputS, negativeOffset);
   } else {
     firstOutput = cipher.encode(inputN, offset);
-   secondOutput = cipher.encode(inputS, offset);
+    secondOutput = cipher.encode(inputS, offset);
   }
-  outputName.innerHTML =firstOutput;
+  outputName.innerHTML = firstOutput;
   outputSuername.innerHTML = secondOutput /* Aqui estoy asignado el valor que me 
   retorna la función del respectivo objeto con su propiedad que estoy llamando;
   para pintarlo en la variable que representa el id. */
@@ -134,12 +134,12 @@ const functionDecodeCard = (inputNumber, inputCode, offset) => {
   if (offset < 0) {
     let negativeOffset = offset * -1;
     firstOutput = cipher.encode(inputNumber, negativeOffset);
-   secondOutput = cipher.encode(inputCode, negativeOffset);
+    secondOutput = cipher.encode(inputCode, negativeOffset);
   } else {
     firstOutput = cipher.decode(inputNumber, offset);
-   secondOutput = cipher.decode(inputCode, offset);
+    secondOutput = cipher.decode(inputCode, offset);
   }
-  outputNumberDecode.innerHTML =firstOutput;
+  outputNumberDecode.innerHTML = firstOutput;
   outputCodeDecode.innerHTML = secondOutput;
 };
 
@@ -151,15 +151,15 @@ btnDecodeCard.addEventListener('click', () => {
 })
 
 const functionEncodeCard = (inputNumber, inputCode, offset) => {
-  let firstOutput= '';
+  let firstOutput = '';
   let secondOutput = '';
   if (offset < 0) {
     let negativeOffset = offset * -1;
     firstOutput = cipher.decode(inputNumber, negativeOffset);
-   secondOutput = cipher.decode(inputCode, negativeOffset);
+    secondOutput = cipher.decode(inputCode, negativeOffset);
   } else {
     firstOutput = cipher.encode(inputNumber, offset);
-   secondOutput = cipher.encode(inputCode, offset);
+    secondOutput = cipher.encode(inputCode, offset);
   }
   outputNumberEncode.innerHTML = firstOutput;
   outputCodeEncode.innerHTML = secondOutput;
