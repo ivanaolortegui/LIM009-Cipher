@@ -22,7 +22,7 @@ const inputNameEncode = document.getElementById('input-name-encode');
 const inputSurnameEncode = document.getElementById('input-surname-encode');
 const offsetEncode = document.getElementById('offset-encode');
 const outputNameDecode = document.getElementById('output-name-decode');
-const outputSurnameDecode = document.getElementById('output-surname-decode')
+const outputSurnameDecode = document.getElementById('output-surname-decode');
 const btnDecode = document.getElementById('btn-decode');
 // Creo cnstantes para capturar al elemento por su ID del formulario para cifrar tarjetas.
 const inputNumberDecode = document.getElementById('input-number-decode');
@@ -84,15 +84,14 @@ const functionEncode = (inputN, inputS, offset) => {
   outputSuername.innerHTML = secondOutput; /* Aqui estoy asignado el valor que me 
   retorna la función del respectivo objeto con su propiedad que estoy llamando;
   para pintarlo en la variable que representa el id. */
-
 };
 
 btnEncode.addEventListener('click', () => {
   let inputNameValue = inputName.value;
   let offsetValue = parseInt(offset.value);
   let inputSurnameValue = inputSurname.value;
-  functionEncode(inputNameValue, inputSurnameValue, offsetValue)
-})
+  functionEncode(inputNameValue, inputSurnameValue, offsetValue);
+});
 
 const functionDecode = (inputN, inputS, offset) => {
   let firstOutput = '';
@@ -114,7 +113,7 @@ btnDecode.addEventListener('click', () => {
   let inputSurnameValue = inputSurnameEncode.value;
   let offsetValue = parseInt(offsetEncode.value);
   functionDecode(inputNameValue, inputSurnameValue, offsetValue);
-})
+});
 
 const functionDecodeCard = (inputNumber, inputCode, offset) => {
   let firstOutput = '';
