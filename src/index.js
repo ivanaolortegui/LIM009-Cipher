@@ -39,43 +39,30 @@ const outputNumberEncode = document.getElementById('output-number-encode');
 const outputCodeEncode = document.getElementById('output-code-encode');
 const btnEncodeCard = document.getElementById('btn-encode-card');
 
-
-pageEncodeName.style.display = 'none';
-pageEncodeCard.style.display = 'none';
-pageDecodeName.style.display = 'none';
-pageDecodeCard.style.display = 'none';
+[pageEncodeName, pageEncodeCard, pageDecodeName, pageDecodeCard].forEach(ele => ele.style.display = 'none');
 
 // Aqui registro un evento que dice : Oye encodeName Escuchame cuando  haga click y ejecutame lo que hay dentro  
 
 encodeName.addEventListener('click', () => {
-  homepage.style.display = 'none';
+  [homepage, pageEncodeCard, pageDecodeName, pageDecodeCard].forEach(ele => ele.style.display = 'none');
   pageEncodeName.style.display = 'block';
-  pageEncodeCard.style.display = 'none';
-  pageDecodeName.style.display = 'none';
-  pageDecodeCard.style.display = 'none';
 });
 
+/* Cree un array con las variables que necesito ocultar y para ello use un forEach para recorrer cada una de 
+las variables y le asigne la propiedad display none. */
+
 encodeCard.addEventListener('click', () => {
-  homepage.style.display = 'none';
-  pageEncodeName.style.display = 'none';
+  [homepage, pageEncodeName, pageDecodeName, pageDecodeCard].forEach(ele => ele.style.display = 'none');
   pageEncodeCard.style.display = 'block';
-  pageDecodeName.style.display = 'none';
-  pageDecodeCard.style.display = 'none';
 });
 
 decodeName.addEventListener('click', () => {
-  homepage.style.display = 'none';
-  pageEncodeName.style.display = 'none';
-  pageEncodeCard.style.display = 'none';
+  [homepage, pageEncodeName, pageEncodeCard, pageDecodeCard].forEach(ele => ele.style.display = 'none');
   pageDecodeName.style.display = 'block';
-  pageDecodeCard.style.display = 'none';
 });
 
 decodeCard.addEventListener('click', () => {
-  homepage.style.display = 'none';
-  pageEncodeName.style.display = 'none';
-  pageEncodeCard.style.display = 'none';
-  pageDecodeName.style.display = 'none';
+  [homepage, pageEncodeName, pageEncodeCard, pageDecodeName].forEach(ele => ele.style.display = 'none');
   pageDecodeCard.style.display = 'block';
 });
 
