@@ -20,7 +20,7 @@ En este mundo digital la privacidad y seguridad de los datos personales se encue
 
 Para ello, **SECURITY BANK** cuenta con unos de los métodos de cifrado más conocidos **el Cifrado César** el cual consiste en: sustituir o desplazar una letra del texto original por otra que se encuentra en un número fijo de posiciones más adelante en el mismo alfabeto🔒💳 .
 
-específicamente a los usuarios  permite a los usuarios crear contraseñas para proteger sus tarjetas,
+específicamente a los usuarios  permite a los usuarios crear contraseñas para proteger sus tarjetas.
 ![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
 
 Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
@@ -39,9 +39,9 @@ En la actualidad, todos los cifrados de sustitución simple se descifran con muc
 
  Debido a mi interés por solucionar problemas de robo o violación de datos personales en internet, decidí descubrir  en qué situaciones de la vida real una persona persona tendría la necesidad de cifrar sus datos o algún tipo de mensaje y en mi investigación realice preguntas a familiares y amigos para obtener un mejor enfoque para darles un producto que solucionara sus problemas o quizás darle la confianza y seguridad a sus datos personale a la hora de estar en internet. 
 
- Realice las siguientes preguntas : 
+ Realice las siguientes preguntas :   
    **¿Por qué necesitamos encriptar tus datos?**  
-   **¿Que tipo de datos te gustaría mantener cifrado con un número que puedas?**   
+   **¿Que tipo de datos te gustaría mantener cifrado con un número que puedas utilizar para descifrarlo también?**   
    **¿En qué momento tu necesitarías tus datos encriptados?**
 
 ### Síntesis y definición
@@ -121,14 +121,10 @@ En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proces
  
  El producto está resolviendo problemas de inseguridad o de robo de números de tarjetas, ya que solo con quien el usuario comparta su número de tarjetas cifrada y clave secreta serán los únicos en tener acceso a los datos reales a la hora de descifrar el mensaje secreto.
 
+## Paleta de Colores 
 
-## Interfaz de usuario (UI)
+![Sin titulo](img-readme/Paleta-colores.jpg)
 
-### Interfaz para Desktop o PC
-
-### Interfaz para Mobile
-
-(Usar una gif de la UI de la pag)
 
 
 ## Planning
@@ -183,6 +179,6 @@ Esta sección está  mostrar los requerimientos que he completado.
 
 ☑ Cifra/descifra minúsculas
 
-* [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
+☑ Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
 
 ☑ Permite usar un `offset` negativo.
