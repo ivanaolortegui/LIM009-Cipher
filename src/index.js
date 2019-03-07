@@ -1,5 +1,5 @@
 /* Acá va tu código */
-// Creo cnstantes para capturar al elemento por su ID de las páginas que quiero que se muestren y oculten.
+// Creo constantes para capturar al elemento por su ID de las páginas que quiero que se muestren y oculten.
 const encodeName = document.getElementById('encode-name');
 const encodeCard = document.getElementById('encode-card');
 const decodeName = document.getElementById('decode-name');
@@ -39,31 +39,37 @@ const outputNumberEncode = document.getElementById('output-number-encode');
 const outputCodeEncode = document.getElementById('output-code-encode');
 const btnEncodeCard = document.getElementById('btn-encode-card');
 
-[pageEncodeName, pageEncodeCard, pageDecodeName, pageDecodeCard].forEach(ele => ele.style.display = 'none');
-
 // Aqui registro un evento que dice : Oye encodeName Escuchame cuando  haga click y ejecutame lo que hay dentro  
 
 encodeName.addEventListener('click', () => {
-  [homepage, pageEncodeCard, pageDecodeName, pageDecodeCard].forEach(ele => ele.style.display = 'none');
-  pageEncodeName.style.display = 'block';
+  [homepage, pageEncodeCard, pageDecodeName, pageDecodeCard].forEach(ele => ele.classList.add('hidden'));
+  [homepage, pageEncodeCard, pageDecodeName, pageDecodeCard].forEach(ele => ele.classList.remove('show'));
+  pageEncodeName.classList.add('show');
+  pageEncodeName.classList.remove('hidden');
 });
 
-/* Cree un array con las variables que necesito ocultar y para ello use un forEach para recorrer cada una de 
-las variables y le asigne la propiedad display none. */
+/* Cree un array con las variables que necesito ocultar y para ello use un 
+forEach para recorrer cada una de las variables y agregales la clase hidden. */
 
 encodeCard.addEventListener('click', () => {
-  [homepage, pageEncodeName, pageDecodeName, pageDecodeCard].forEach(ele => ele.style.display = 'none');
-  pageEncodeCard.style.display = 'block';
+  [homepage, pageEncodeName, pageDecodeName, pageDecodeCard].forEach(ele => ele.classList.add('hidden'));
+  [homepage, pageEncodeName, pageDecodeName, pageDecodeCard].forEach(ele => ele.classList.remove('show'));
+  pageEncodeCard.classList.add('show');
+  pageEncodeCard.classList.remove('hidden');
 });
 
 decodeName.addEventListener('click', () => {
-  [homepage, pageEncodeName, pageEncodeCard, pageDecodeCard].forEach(ele => ele.style.display = 'none');
-  pageDecodeName.style.display = 'block';
+  [homepage, pageEncodeName, pageEncodeCard, pageDecodeCard].forEach(ele => ele.classList.add('hidden'));
+  [homepage, pageEncodeName, pageEncodeCard, pageDecodeCard].forEach(ele => ele.classList.remove('show'));
+  pageDecodeName.classList.add('show');
+  pageDecodeName.classList.remove('hidden');
 });
 
 decodeCard.addEventListener('click', () => {
-  [homepage, pageEncodeName, pageEncodeCard, pageDecodeName].forEach(ele => ele.style.display = 'none');
-  pageDecodeCard.style.display = 'block';
+  [homepage, pageEncodeName, pageEncodeCard, pageDecodeName].forEach(ele => ele.classList.add('hidden'));
+  [homepage, pageEncodeName, pageEncodeCard, pageDecodeName].forEach(ele => ele.classList.remove('show'));
+  pageDecodeCard.classList.add('show');
+  pageDecodeCard.classList.remove('hidden');
 });
 
 

@@ -14,13 +14,14 @@ body {
   
 }
 
-.visible{
+.show {
 display: block;
 }
 
-.ocultar {
+.hidden {
   display: none;
 }
+
 /* Cabecera  */
 header {
   width: 100%;
