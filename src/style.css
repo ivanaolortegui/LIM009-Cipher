@@ -215,7 +215,8 @@ form {
 footer {
   width: 100%;
   padding: 3% 1% 4% 0%;
-  color:#C9BFB0;
+  font-size: 160%;
+  color:#C9AC81;
   position: relative;
   bottom: 0;
 }
@@ -287,7 +288,7 @@ footer {
   }
 
   footer {
-    font-size: 76%;
+    font-size: 79%;
     padding: 3% 1% 4% 1%;
   }
 
