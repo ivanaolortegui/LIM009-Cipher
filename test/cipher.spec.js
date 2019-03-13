@@ -32,6 +32,9 @@ describe('cipher', () => {
     it('debería retornar "æîòøåö" para "áéíóúñ" con offset 26', () => {
       assert.equal(cipher.encode('áéíóúñ', 26), 'æîòøåö');
     });
+    it('debería retornar "EFGHIJKLMNOPQRSTUVWXYZABCD" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 30', () => {
+      assert.equal(cipher.encode('ABCDEFGHIJKLMNOPQRSTUVWXYZ', 30), 'EFGHIJKLMNOPQRSTUVWXYZABCD');
+    });
   });
 
   describe('cipher.decode', () => {
